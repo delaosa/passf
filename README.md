@@ -2,6 +2,13 @@
 
 passF is a password manager based on [pass](https://www.passwordstore.org). You can see this app as a mobile client of [pass](https://www.passwordstore.org).
 
+
+<p align="center">
+<a href='https://play.google.com/store/apps/details?id=xyz.delaosa.passf&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+</p>
+
+
+
 # Features
 
 - Clone an existing pass repository (SSH)
@@ -15,19 +22,19 @@ passF is a password manager based on [pass](https://www.passwordstore.org). You 
 
 # Howto
 
-In case you are reusing some exiting SSH/PGP keys just import them into the settings section of passF. 
+In case you are reusing some exiting SSH/PGP keys just import them into the settings section of passF.
 
 It's recommended to generate a new set of SSH and PGP keys for passF, you can do it with passF or anywhere else and import them in.
 
 From passF:
 
-- Go to Setting -> Repository/Git 
+- Go to Setting -> Repository/Git
 - Fill Git URL
 - Click 'Generate keys' from taskbar menu
-- Click on 'Copy public key to clipboard' and keep it somewhere for later use. 
+- Click on 'Copy public key to clipboard' and keep it somewhere for later use.
 - Click on save icon
 
-- Go to Setting -> PGP/Keys 
+- Go to Setting -> PGP/Keys
 - Click 'Generate keys' from taskbar menu
 - Click on Private Key share icon, write down backup passphrase and keep it somewhere safe for later use. Select destination for the exported key.
 - Click on save icon
@@ -99,7 +106,7 @@ In case you have generated new keys:
 
 gpg> quit
 ```
- 
+
 4. Add the new PGP key to the pass repository, don't forget to include keys formerly in use by pass(usually in ~/.password-store/.gpg-id).
 
 ```
@@ -114,5 +121,5 @@ pass git push
 
 
 Back to passF:
- 
+
 From the main screen pull down to refresh and pass repository will be cloned from your remote git repository.
