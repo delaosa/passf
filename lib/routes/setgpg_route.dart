@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -223,7 +222,7 @@ class SetGpgRouteState extends State<SetGpgRoute> {
                           color: Theme.of(context).colorScheme.secondary),
                       tooltip: 'Share',
                       onPressed: () async {
-                        final passphrase = passwords.debugMode ?  "debugging" : passwords.generatePassword(true, true, true, true, 20);
+                        final passphrase = passwords.debugMode ?  "debugging" : passwords.generatePassword(true, true, true, true, 20 );
                         final dialogResult = await confirmDialog(context, "Write down this code to decrypt exported file: \n\n" + passphrase);
                         if (dialogResult) {
                           final result = await passwords.exportKeyToFile(true,passphrase,"pgp_private",_tecPrivate.text);

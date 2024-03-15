@@ -160,7 +160,7 @@ class _ListRouteState extends State<ListRoute> with WidgetsBindingObserver {
                 } else if (selectedValue == "Sync") {
                   key.currentState.callRefresh();
                 } else if (selectedValue == "Debug") {
-                  passwords.getDirectoriesList();
+                  //passwords.getDirectoriesList();
                 }
               },
               itemBuilder: (BuildContext context) => <PopupMenuEntry>[

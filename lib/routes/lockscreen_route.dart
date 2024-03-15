@@ -70,9 +70,7 @@ class LockScreenRouteState extends State<LockScreenRoute> {
       });
       authenticated = await auth.authenticate(
           localizedReason: appName,
-          useErrorDialogs: true,
-          stickyAuth: true,
-          biometricOnly: true);
+          options: const AuthenticationOptions(useErrorDialogs: true, stickyAuth: true, biometricOnly: true));
       setState(() {
         _isAuthenticating = false;
         _authorized = 'Authenticating';

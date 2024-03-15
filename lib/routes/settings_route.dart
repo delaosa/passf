@@ -53,9 +53,7 @@ class SettingsRouteState extends State<SettingsRoute> {
       });
       authenticated = await auth.authenticate(
           localizedReason: appName,
-          useErrorDialogs: true,
-          stickyAuth: true,
-          biometricOnly: true);
+          options: const AuthenticationOptions(useErrorDialogs: true, stickyAuth: true, biometricOnly: true));
       setState(() {
         _isAuthenticating = false;
       });

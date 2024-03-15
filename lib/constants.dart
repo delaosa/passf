@@ -1,5 +1,5 @@
 // *Note*: when appVersion is changed, remember to also update pubspec.yaml.
-const appVersion = 'v0.1.2';
+const appVersion = 'v0.1.3';
 const appName = 'passF';
 const appDescription = 'A password manager';
 const googleplayUrl = 'https://play.google.com/store/apps/details?id=xyz.delaosa.passf';
@@ -13,7 +13,7 @@ const int appLockTimeout = 5;
 const licenseText = '''
 MIT License
 
-Copyright (c) 2022 delaosa
+Copyright (c) 2024 delaosa
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

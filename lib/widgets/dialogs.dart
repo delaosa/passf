@@ -8,7 +8,7 @@ Future<bool> confirmDialog(BuildContext context, [String text = "Do you want to 
     builder: (BuildContext context) {
       return AlertDialog(
         //title: Text('$operation?'),
-        content: Text(text),
+        content: SelectableText(text),
         actions: <Widget>[
           TextButton(
             child: const Text('No'),
